@@ -1,51 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>EDITABLE Dynamic Resume Builder</title>
-	<link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EDITABLE Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<nav class="navbar">
-		<div class="nav-container">
-			<div class="nav-content">
-				<div class="toggler">
-					<a href="index.html" class="nav-brand"></a>
-					<img class="nav-icon" src="icon.jpg" >
-					<span class="nav-text" >Dynamic Resume Builder</span>
-				</a>
-					<div class="bars">
-						<div class="bar"></div>
-						<div class="bar"></div>
-						<div class="bar"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</nav>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="toggler">
+                    <a href="index.html" class="nav-brand">
+                        <img class="nav-icon" src="icon.jpg" alt="Icon">
+                        <span class="nav-text">Dynamic Resume Builder</span>
+                    </a>
+                    <div class="bars">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <h2>EDITABLE DYNAMIC RESUME BUILDER</h2>
     <p class="para"><strong>BY SHEERAZ AHMED</strong></p>
+    
     <div class="container">
-
         <div class="form-container">
             <h2>PERSONAL INFORMATION</h2>
             <form id="formResume">
                 <div class="input-name">
                     <i class="fa fa-user user"></i>
                     <input type="text" placeholder="Enter Your URL" class="text-name" id="url">
-                </div>  
+                </div>
 
                 <div class="input-name">
                     <i class="fa fa-user user"></i>
                     <input type="text" placeholder="Enter Your Name" class="text-name" id="name">
-                </div>            
+                </div>
 
                 <div class="input-name">
-                    <i class="fa fa-envelope user" ></i>
-                    <input type="email" placeholder="Enter Your Email Name" class="text-name" id="email">
+                    <i class="fa fa-envelope user"></i>
+                    <input type="email" placeholder="Enter Your Email" class="text-name" id="email">
                 </div>
 
                 <div class="input-name">
@@ -60,22 +60,23 @@
 
                 <div class="input-name">
                     <i class="fa fa-map-marker user"></i>
-                    <input type="text" placeholder="Enter Your Address " class="text-name" id="address">
+                    <input type="text" placeholder="Enter Your Address" class="text-name" id="address">
                 </div>
 
-                <div class="img"></div>
+                <div class="input-name">
+                    <i class="fa fa-image user"></i>
                     <input type="file" class="text-name" id="profile">
                 </div>
 
-            <h2>EDUCATION</h2>
+                <h2>EDUCATION</h2>
                 <div class="input-name">
                     <i class="fa fa-graduation-cap user"></i>
-                    <input type="text" placeholder="Enter Your degree Name" class="text-name" id="degree">
+                    <input type="text" placeholder="Enter Your Degree Name" class="text-name" id="degree">
                 </div>
 
                 <div class="input-name">
                     <i class="fa fa-calendar user"></i>
-                    <input type="text" placeholder="Enter Your Passing Year" class="text-name" id="year">  
+                    <input type="text" placeholder="Enter Your Passing Year" class="text-name" id="year">
                 </div>
 
                 <div class="input-name">
@@ -88,7 +89,7 @@
                     <input type="text" placeholder="Enter Your Grade" class="text-name" id="grade">
                 </div>
 
-            <h2>SKILLS</h2>
+                <h2>SKILLS</h2>
                 <div class="input-name">
                     <i class="fa fa-cogs user"></i>
                     <input type="text" placeholder="Enter Your Skills" class="text-name" id="skill">
@@ -96,10 +97,10 @@
 
                 <div class="input-name">
                     <i class="fa fa-level-up user"></i>
-                    <input type="text" placeholder="Enter Your Skill Level" class="text-name" id="level">  
+                    <input type="text" placeholder="Enter Your Skill Level" class="text-name" id="level">
                 </div>
 
-            <h2>EXPERIENCE</h2>
+                <h2>EXPERIENCE</h2>
                 <div class="input-name">
                     <i class="fa fa-tasks user"></i>
                     <input type="text" placeholder="Enter Your Job Title" class="text-name" id="title">
@@ -107,12 +108,12 @@
 
                 <div class="input-name">
                     <i class="fa fa-industry user"></i>
-                    <input type="text" placeholder="Enter Your Company Name" class="text-name" id="company">  
+                    <input type="text" placeholder="Enter Your Company Name" class="text-name" id="company">
                 </div>
 
                 <div class="input-name">
                     <i class="fa fa-clock-o user"></i>
-                    <input type="text" placeholder="Enter Your Job Duration" class="text-name" id="duration">  
+                    <input type="text" placeholder="Enter Your Job Duration" class="text-name" id="duration">
                 </div>
 
                 <div class="input-name">
@@ -122,11 +123,8 @@
         </div>
     </div>
 
-    <!-- Dynamic resume  -->
-
-    <div  id="resumeDisplay">
-       
-    </div>
+    <!-- Dynamic resume display -->
+    <div id="resumeDisplay"></div>
 
     <script src="main.js"></script>
 </body>
